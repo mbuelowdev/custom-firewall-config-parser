@@ -1,0 +1,34 @@
+<html>
+    <body>
+        <form action="input.php" method="POST" enctype="multipart/form-data">
+          <label for="fileWebadminXML">Please select webadmin.xml for upload: </label>
+          <input type="file" name="fileWebadminXML" id="fileWebadminXML" accept=".xml" required>
+          <br>
+          <label for="fileConfdXML">Please select confd.xml for upload: </label>
+          <input type="file" name="fileConfdXML" id="fileConfdXML" accept=".xml" required>
+          <br>
+          <br>
+          <label for="DEBUG__SHOW_ALL_PARSED_OBJECTS">DEBUG__SHOW_ALL_PARSED_OBJECTS</label>
+          <input type="checkbox" id="DEBUG__SHOW_ALL_PARSED_OBJECTS" name="DEBUG__SHOW_ALL_PARSED_OBJECTS" value="DEBUG__SHOW_ALL_PARSED_OBJECTS">
+          <br>
+          <label for="DEBUG__PRINT_NULL_OBJECT_REFERENCES_AND_DIE">DEBUG__PRINT_NULL_OBJECT_REFERENCES_AND_DIE</label>
+          <input type="checkbox" id="DEBUG__PRINT_NULL_OBJECT_REFERENCES_AND_DIE" name="DEBUG__PRINT_NULL_OBJECT_REFERENCES_AND_DIE" value="DEBUG__PRINT_NULL_OBJECT_REFERENCES_AND_DIE">
+          <br>
+          <label for="DEBUG__ONLY_SHOW_WHERE_NOT_FLATTENED">DEBUG__ONLY_SHOW_WHERE_NOT_FLATTENED</label>
+          <input type="checkbox" id="DEBUG__ONLY_SHOW_WHERE_NOT_FLATTENED" name="DEBUG__ONLY_SHOW_WHERE_NOT_FLATTENED" value="DEBUG__ONLY_SHOW_WHERE_NOT_FLATTENED">
+          <br>
+          <br>
+          <label for="format">Output format:</label>
+          <select name="format" id="format">
+            <option value="csv">CSV</option>
+            <option value="json">JSON</option>
+          </select>
+          <br>
+          <label for="as_download">As download</label>
+          <input type="checkbox" id="as_download" name="as_download" value="as_download">
+          <br>
+          <br>
+          <input type="submit" value="Convert" name="submit">
+        </form>
+        </body>
+</html>
